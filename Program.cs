@@ -16,13 +16,13 @@ namespace Primeiro
         double preco2 = 650.50;
         double medida = 53.234567;
         Console.WriteLine("Produtos");
-        Console.WriteLine($"{produto1}, cujo preço é $ {preco1}");
-        Console.WriteLine($"{produto2}, cujo preço é $ {preco2}");
+        Console.WriteLine(produto1+"produto1, cujo preço é $ "+preco1);
+        Console.WriteLine(produto2+", cujo preço é $ "+ preco2);
         
-        Console.WriteLine($"Registro: {idade} de idade, código {codigo} e gênero: {genero}");
+        Console.WriteLine($"Registro: "+idade+ "de idade, código "+codigo+ "e gênero: "+genero);
 
-        Console.WriteLine($"Medida com oito casas decimais:{medida}");
-        Console.WriteLine($"Arredondado: {medida:f3}");
+        Console.WriteLine("Medida com oito casas decimais:"+ medida);
+        Console.WriteLine("Arredondado: {0:f3}",medida);
         Console.WriteLine("Separador decimal invariant culture:"+medida.ToString("F3", CultureInfo.InvariantCulture));
 
     }
